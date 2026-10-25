@@ -1,4 +1,4 @@
-push
+#push
 
 git init
 git branch -M main
@@ -8,6 +8,21 @@ git remote add origin YOUR_GITHUB_URL
 git push -u origin main
 
 
-pull
+#pull
 
 git pull origin main
+
+
+
+#Branch Creation
+
+git switch -c "branch name"
+
+git add .
+git commit -m "Add branch test file"
+
+git push -u origin "branch name"
+
+git switch main
+git merge "branch name"
+git push origin main
